@@ -13,6 +13,14 @@ app.get(('/'), (req, res) => {
 	res.render('index')
 })
 
+app.get(('/about'), (req, res) => {
+	res.render('about')
+})
+
+app.get(('/page-searchresults'), (req, res) => {
+	res.render('page-searchresults')
+})
+
 let port = process.env.PORT || 3001
 
 app.listen(port, () => {
