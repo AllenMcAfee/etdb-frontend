@@ -1,0 +1,19 @@
+html(lang='en')
+	head
+		title Caltech - ETDB
+		link(href='node_modules/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='assets/jensen.css', rel="stylesheet", type='text/css')
+		link(href='assets/boots-bones.css', rel="stylesheet", type='text/css')
+		link(href='assets/contact.css', rel="stylesheet", type='text/css')
+	body
+		include header.pug
+		#home-image
+			#home-image-container
+				img(src="http://www.designing-science-development.com/jensen/wp-content/uploads/2018/03/Screen-Shot-2018-03-01-at-12.44.06-PM.jpg")
+		#homecontent.row
+			#homehero.col-sm-6
+			#homesecondary.col-sm-6
+				div
+					h3 Caltech Electron Tomography Database
+					h6 Cryo-electron tomography is a specialized imaging technique used to produce high-resolution, three-dimensional views of cells
+					a(class="browse" href="http://www.designing-science-development.com/jensen/search-results/") Browse database 

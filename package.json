@@ -1,0 +1,38 @@
+{
+  "name": "etdb-frontend",
+  "version": "1.0.0",
+  "description": "Front-end for the ETDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theJensenLab/etdb-frontend.git"
+  },
+  "keywords": [
+    "science",
+    "tomography",
+    "database",
+    "template"
+  ],
+  "author": "Prudence Rees-Lee",
+  "contributors": [
+    {
+      "name": "Davi Ortega",
+      "email": "ortegad@caltech.edu",
+      "url": "daviortega.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theJensenLab/etdb-frontend/issues"
+  },
+  "homepage": "https://github.com/theJensenLab/etdb-frontend#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}
