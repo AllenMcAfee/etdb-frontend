@@ -17,9 +17,26 @@ app.get(('/about'), (req, res) => {
 	res.render('about')
 })
 
-app.get(('/page-searchresults'), (req, res) => {
-	res.render('page-searchresults')
+app.get(('/database'), (req, res) => {
+	res.render('database')
 })
+
+app.get(('/header_home'), (req, res) => {
+	res.render('header_home')
+})
+
+app.get(('/featured'), (req, res) => {
+	res.render('featured')
+})
+
+app.get(('/singletomogram'), (req, res) => {
+	res.render('singletomogram')
+})
+
+app.get(('/contact'), (req, res) => {
+	res.render('contact')
+})
+
 
 let port = process.env.PORT || 3001
 

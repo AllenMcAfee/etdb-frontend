@@ -6,14 +6,15 @@ html(lang='en')
 		link(href='assets/boots-bones.css', rel="stylesheet", type='text/css')
 		link(href='assets/contact.css', rel="stylesheet", type='text/css')
 	body
-		include header.pug
+		include header_home.pug
 		#home-image
 			#home-image-container
-				img(src="http://www.designing-science-development.com/jensen/wp-content/uploads/2018/03/Screen-Shot-2018-03-01-at-12.44.06-PM.jpg")
+				img(src="/assets/red.jpg")
 		#homecontent.row
 			#homehero.col-sm-6
 			#homesecondary.col-sm-6
 				div
 					h3 Caltech Electron Tomography Database
 					h6 Cryo-electron tomography is a specialized imaging technique used to produce high-resolution, three-dimensional views of cells
-					a(class="browse" href="http://www.designing-science-development.com/jensen/search-results/") Browse database 
+					a(class="browse" href="/database") Browse database 
+						i.fa.fa-arrow-right(aria-hidden='true')

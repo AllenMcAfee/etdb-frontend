@@ -1,0 +1,58 @@
+html(lang='en')
+	head
+		title Caltech - ETDB
+		link(href='node_modules/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='assets/jensen.css', rel="stylesheet", type='text/css')
+		link(href='assets/boots-bones.css', rel="stylesheet", type='text/css')
+		link(href='assets/contact.css', rel="stylesheet", type='text/css')
+	body
+		include header.pug
+				 
+
+
+#singletomogram.row
+		.col-sm-6
+			a(class='return' href="/database")
+				span.fas.fa-arrow-left 
+				p Return to database
+
+		#downloadoptions.col-sm-6
+			li.dropdown.btn.btn-default
+				span.glyphicon.glyphicon-th-list
+					|  Download Options 
+					span.fas.fa-arrow-down
+				ul.dropdown-menu.dropdown-toggle(data-toggle="dropdown")
+					li
+						a(href="#") Raw data
+					li 
+						a(href="#") 3D Reconstruction
+
+
+#singletomograminfo.row
+		#videoembed.col-sm-8
+			video(autoplay='' loop='')
+				source(src='http://www.designing-science-development.com/jensen/wp-content/uploads/2018/01/tomogram-Converted_1.mp4', type='video/mp4')
+				source(src='/video/movie.ogg', type='video/ogg')
+
+		#tomographdata.col-sm-4
+			h2 E.coli Minicell/Pul T2SS 
+			h3 <b>Lab:</b> Jensen Lab
+			h3 <b>Insitution:</b> Caltech
+			#reddiv 
+			p <b>Tilt Series date:</b> 04/17/2017
+			p <b>Data Taken By:</b> Yiwei Chang
+			p <b>Description:</b> grid box YWC250
+			p <b>Strain:</b> PAP5359 (minCDE knockout) (Pipeline: autoprocref_1492486778)
+			p <b>Species / Specimen:</b> Escherichia coli 562
+			p <b>Collaborators and Roles:</b> Strain provided by Ingrid Guilvout in Olivera Francetic lab
+			p <b>Tilt Series Setting:</b> single tilt. constant angular increment, step: 1.0. tilt range: (-60, 60). dosage: 130/A2. defocus: -6um. magnification: 27500.
+			p <b>Microscope:</b> Caltech Polara
+			p <b>Acquisition Software:</b> UCSFTomo
+			p <b>Processing Software Used:</b> Raptor
+
+
+
+
+
+include footer.pug
+
