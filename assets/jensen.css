@@ -215,9 +215,13 @@ font-family: 'Open Sans', sans-serif;;
     font-size: 16px;
 }
 
+a { 
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;}
 
-
-
+a:hover {
+    opacity: .7;
+}
 
 
 -------------------------------------------------------------- */
@@ -262,7 +266,9 @@ div#menu a {
 
   text-decoration: none;
 }
-
+div#menu a:hover {
+    opacity: 1;
+}
 
 div#menu {
     text-align: right;
@@ -484,6 +490,7 @@ div#footer img {
 
 div#footer p {
     font-size: 14px;
+    font-weight: light;
 }
 
 div#footer {
@@ -807,10 +814,23 @@ div#search {
     padding: 0px 30px;
 position: relative;
 }
+div#videoinner img {
+    width: 100%;
+}
 
 div#singletomogram, div#singletomograminfo {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
+}
+
+svg.svg-inline--fa.fa-facebook-square.fa-w-14, svg.svg-inline--fa.fa-twitter-square.fa-w-14 {
+    font-size: 24px !important;
+    margin: 0px 10px;
+    margin-top: 5px;
+}
+
+div#tomographdata {
+    padding-left: 0px;
 }
 
 div#singletomogram .col-sm-6, div#singletomogram .col-sm-3 {
@@ -840,7 +860,7 @@ div#singletomogram p {
 
 div#tomographdata h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -894,6 +914,12 @@ div#download-options .dropdown-menu a, div#sort-options .dropdown-menu a {
 div#download-options .dropdown-menu a:hover, div#sort-options .dropdown-menu a:hover {
     color: #fff;
    background: #2b2b2b;
+}
+
+div#videoinner {
+    width: 450px;
+    height: 450px;
+    background: red;
 }
 
 div#singletomogram h2 {
@@ -1028,9 +1054,29 @@ div#featured img {
     margin-bottom: 15px;
 }
 
+div#featured-2 {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding-top: 150px;
+}
+
 div#featured {
     max-width: 1200px;
     margin: 0 auto 50px;
+}
+
+div#featured-3 p {
+    font-weight: lighter;
+    padding-right: 50px;
+}
+
+div#featured-3 {
+    max-width: 1200px;
+    margin: 0 auto 100px;
+}
+
+div#spacediv {
+    height: 45px;
 }
 
 div#featured-grid {
@@ -1039,6 +1085,9 @@ div#featured-grid {
     margin-bottom: 80px;
 }
 
-/* Forms
+/* contact
 -------------------------------------------------------------- */
 
+h3.contact {
+    font-size: 16px;
+}

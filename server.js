@@ -37,6 +37,10 @@ app.get(('/contact'), (req, res) => {
 	res.render('contact')
 })
 
+app.get(('/carboxysomes-collection'), (req, res) => {
+	res.render('carboxysomes-collection')
+})
+
 
 let port = process.env.PORT || 3001
 

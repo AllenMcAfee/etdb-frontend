@@ -29,12 +29,16 @@ html(lang='en')
 
 
 #singletomograminfo.row
-		#videoembed.col-sm-8
-			video(autoplay='' loop='')
-				source(src='http://www.designing-science-development.com/jensen/wp-content/uploads/2018/01/tomogram-Converted_1.mp4', type='video/mp4')
-				source(src='/video/movie.ogg', type='video/ogg')
+		#videoembed.col-sm-6
+			#videoinner
+				img(src="/assets/placeholder.jpg")
+				#share
+					p <b>Share:</b>
+						span.fab.fa-facebook-square
+						span.fab.fa-twitter-square
 
-		#tomographdata.col-sm-4
+
+		#tomographdata.col-sm-6
 			h2 E.coli Minicell/Pul T2SS 
 			h3 <b>Lab:</b> Jensen Lab
 			h3 <b>Insitution:</b> Caltech

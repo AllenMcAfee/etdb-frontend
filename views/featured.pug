@@ -7,14 +7,28 @@ html(lang='en')
 		link(href='assets/contact.css', rel="stylesheet", type='text/css')
 	body
 		include header.pug
-		#about.row
-				div
-					h2 These are the featured tomograms
-					
+		#featured-2.row
+				.col-sm-8
+					h2 With over x tomograms in the database we wanted to highlights some which exhibit particular features. 
+		#featured-3.row
+			.col-sm-4
+				#reddiv
+				p With over x tomograms in the database we wanted to highlights some which exhibit particular features.
+
+			.col-sm-4
+				#reddiv
+				p These collections do not represent every single tomogram which exhibits a paritcular feature, but gives a sample of some that do.
+
+			.col-sm-4
+				#reddiv
+				p Cryo-electron tomography is an imaging technique used to produce high-resolution, 3D views of biological samples, think of it as a CT scan for cells.
+					    
+
 		#featured.row
 					.col-sm-3
-						img(class="results-thumb" src="http://www.designing-science-development.com/jensen/wp-content/uploads/2018/01/keyimg_zl2008-01-11-13.jpg")
-						name Carboxysomes
+						a(href='carboxysomes-collection')
+							img(class="results-thumb" src="http://www.designing-science-development.com/jensen/wp-content/uploads/2018/01/keyimg_zl2008-01-11-13.jpg")
+							name Carboxysomes
 
 					.col-sm-3
 						img(class="results-thumb" src="http://www.designing-science-development.com/jensen/wp-content/uploads/2018/01/keyimg_zl2008-01-11-13.jpg")
@@ -44,3 +58,5 @@ html(lang='en')
 					.col-sm-3
 						img(class="results-thumb" src="http://www.designing-science-development.com/jensen/wp-content/uploads/2018/01/keyimg_zl2008-01-11-13.jpg")
 						name Surface layer
+
+include footer.pug
